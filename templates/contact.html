@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/logo.jpg" class="site-logo"/>
+<title>Contact Me</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #fff;
+        color: #fff;
+    }
+
+    /* NAVBAR */
+    nav {
+        background: #0d1b2a;
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #0d1b2a;
+        font-size: 1rem;
+        transition: 0.3s;
+        background-color: rgb(248, 239, 239);
+        padding: 7px 10px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .nav-links a:hover {
+        color: black;
+    }
+
+    /* HAMBURGER BUTTON */
+    .menu-btn {
+        display: none;
+        font-size: 1.9rem;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    /* MOBILE DROPDOWN MENU */
+    @media (max-width: 768px) {
+        .menu-btn {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background: #0d1b2a;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .nav-links a {
+            margin: 12px 0;
+            display: block;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #0d1b2a;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        color: rgb(248, 239, 239);
+    }
+
+    p, label {
+        color: rgb(248, 239, 239);
+    }
+
+    .contact-box {
+        background: #e9eff4;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        color: #0d1b2a;
+    }
+
+    .contact-box a {
+        color: #0d1b2a;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .contact-box a:hover {
+        text-decoration: underline;
+    }
+
+    /* FORM */
+    form {
+        margin-top: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    button {
+        margin-top: 15px;
+        width: 100%;
+        background: rgb(248, 239, 239);
+        color: #0d1b2a;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #fff;
+    }
+
+    /* FOOTER */
+    .footer {
+        background: #0d1b2a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 2rem;
+        }
+        .container {
+            padding: 15px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav>
+    <div class="nav-container">
+        <a href="images/logo.jpg" class="logo">Contact</a>
+
+        <div class="menu-btn">☰</div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h1>Get In Touch</h1>
+    <p style="text-align:center; margin-bottom: 20px;">Feel free to reach out to me anytime.</p>
+
+    <!-- CONTACT METHODS -->
+    <div class="contact-box">
+        <strong>WhatsApp:</strong><br>
+        <a href="https://wa.me/254722384628" target="_blank">Chat with me on WhatsApp</a>
+    </div>
+
+    <div class="contact-box">
+        <strong>Email:</strong><br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=montiecarmon2002@gmail.com" target="_blank">
+            montiecarmon2002@gmail.com
+        </a>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form action="mailto:montiecarmon2002@gmail.com" method="POST" enctype="text/plain">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
+
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+
+        <label>Your Message</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2025 Montie Carmon — All Rights Reserved
+</div>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector(".nav-links").classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

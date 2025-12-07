@@ -1,0 +1,73 @@
+<!-- index.html -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/png" href="images/logo.jpg" class="site-logo"/>
+<title>Mordechai Carmon Portfolio</title>
+<meta name="description" content="A multi-page portfolio of Montie Carmon, Front-End Developer & Designer."/>
+
+<link rel="stylesheet" href="styles.css">
+<body>
+<header>
+<a href="images/logo.jpg" class="logo">Mordechai Carmon Portfolio</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="templates/project.html">Projects</a>
+<a href="templates/about.html">About</a>
+<a href="templates/contact.html">Contact</a>
+</nav>
+</header>
+
+
+<main>
+<section class="hero">
+<div class="hero-text">
+<h1>Hi, I’m Mordechai Carmon</h1>
+<p>A Front-End Developer & Designer passionate about crafting visually appealing and responsive web experiences that combine design and functionality.</p>
+<a href="templates/project.html" class="btn">View My Projects</a>
+</div>
+<div class="hero-img"><img src="images/profile.jpg" alt="Montie Carmon"/></div>
+</section>
+
+
+<section>
+<h2>Featured Projects</h2>
+<div class="projects-grid">
+<div class="card">
+<img src="images/project1.jpg" alt="Project 1">
+<h3>Vinceearts Photography Dashboard</h3>
+<p>A photography website for indicating the memories created and the moments captured</p>
+<a href="templates/project.html" class="btn">Details</a>
+</div>
+<div class="card">
+<img src="images/project2.jpg" alt="Project 2">
+<h3>Nganya App</h3>
+<p>Connecting passengers, drivers, and administrators with real-time transport technology that makes urban travel smooth and transparent.</p>
+<a href="templates/project.html" class="btn">Details</a>
+</div>
+<div class="card">
+<img src="images/project3.jpg" alt="Project 3">
+<h3>Nexus Learning System</h3>
+<p>Nexus Learning System brings together teachers, learners, and administrators into one powerful platform — Learn, Share, and Grow with technology-driven education.</p>
+<a href="templates/project.html" class="btn">Details</a>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+<p>© <span id="year"></span> Montie Carmon. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", function() {
+  const heading = document.querySelector(".hero-text h1");
+  const typingDuration = 3500; // matches animation duration in ms (3.5s)
+  
+  setTimeout(() => {
+    heading.classList.add("finished");
+  }, typingDuration);
+});
+</script>
+</body>
+</html>
