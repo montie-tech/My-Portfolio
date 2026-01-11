@@ -110,6 +110,27 @@ section {
   animation: typing 10.5s steps(10, end), blink 1.6s step-end infinite alternate;
 }
 
+/* -----------------------------------
+   BRAND LOGO & MOTTO
+----------------------------------- */
+
+.hero-logo {
+  width: 90px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.motto {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--blue-dark);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }

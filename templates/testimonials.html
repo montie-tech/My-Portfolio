@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="images/logo.jpg" class="site-logo"/>
-<title>Contact Me</title>
+<title>Testimonials</title>
 
 <style>
     body {
@@ -57,7 +57,7 @@
         color: black;
     }
 
-    /* HAMBURGER BUTTON */
+    /* HAMBURGER MENU */
     .menu-btn {
         display: none;
         font-size: 1.9rem;
@@ -66,7 +66,6 @@
         user-select: none;
     }
 
-    /* MOBILE DROPDOWN MENU */
     @media (max-width: 768px) {
         .menu-btn {
             display: block;
@@ -77,17 +76,17 @@
             flex-direction: column;
             width: 100%;
             background: #0d1b2a;
-            text-align: center;
             padding: 20px 0;
+            text-align: center;
             border-top: 1px solid rgba(255,255,255,0.2);
         }
 
         .nav-links a {
             margin: 12px 0;
-            display: block;
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+            display: block;
         }
 
         .nav-links.active {
@@ -112,64 +111,34 @@
         color: rgb(248, 239, 239);
     }
 
-    p, label {
+    .subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
         color: rgb(248, 239, 239);
     }
 
-    .contact-box {
+    .testimonial {
         background: #e9eff4;
-        padding: 15px;
+        padding: 18px;
+        margin-bottom: 20px;
         border-radius: 8px;
-        margin-bottom: 15px;
         color: #0d1b2a;
     }
 
-    .contact-box a {
-        color: #0d1b2a;
-        text-decoration: none;
+    .testimonial p {
+        margin: 0 0 10px;
+        line-height: 1.6;
+    }
+
+    .testimonial h4 {
+        margin: 0;
         font-weight: 600;
     }
 
-    .contact-box a:hover {
-        text-decoration: underline;
-    }
-
-    /* FORM */
-    form {
-        margin-top: 20px;
-    }
-
-    input, textarea {
-        width: 100%;
-        padding: 12px;
-        margin-top: 8px;
-        border-radius: 8px;
-        border: none;
-        font-size: 1rem;
-        outline: none;
-    }
-
-    textarea {
-        height: 120px;
-        resize: none;
-    }
-
-    button {
-        margin-top: 15px;
-        width: 100%;
-        background: rgb(248, 239, 239);
-        color: #0d1b2a;
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 600;
-        transition: 0.3s;
-    }
-
-    button:hover {
-        background: #fff;
+    .testimonial span {
+        font-size: 0.9rem;
+        opacity: 0.8;
     }
 
     /* FOOTER */
@@ -191,14 +160,14 @@
         }
     }
 </style>
-
 </head>
+
 <body>
 
 <!-- NAVIGATION BAR -->
 <nav>
     <div class="nav-container">
-        <a href="images/logo.jpg" class="logo">Contact</a>
+        <a href="logo.jpg" class="logo">Testimonials</a>
 
         <div class="menu-btn">☰</div>
 
@@ -214,37 +183,36 @@
 
 <!-- MAIN CONTENT -->
 <div class="container">
+    <h1>Client Testimonials</h1>
+    <p class="subtitle">What people say about working with me</p>
 
-    <h1>Get In Touch</h1>
-    <p style="text-align:center; margin-bottom: 20px;">Feel free to reach out to me anytime.</p>
-
-    <!-- CONTACT METHODS -->
-    <div class="contact-box">
-        <strong>WhatsApp:</strong><br>
-        <a href="https://wa.me/254722384628" target="_blank">Chat with me on WhatsApp</a>
+    <div class="testimonial">
+        <p>
+            “Mordechai delivered a clean, responsive website that exceeded expectations.
+            Communication was clear and professional throughout.”
+        </p>
+        <h4>Vincent K.</h4>
+        <span>Photographer</span>
     </div>
 
-    <div class="contact-box">
-        <strong>Email:</strong><br>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=montiecarmon2002@gmail.com" target="_blank">
-            montiecarmon2002@gmail.com
-        </a>
+    <div class="testimonial">
+        <p>
+            “Creative, reliable, and detail-oriented. The UI design was modern and easy to use.
+            Highly recommended.
+            The website was user-friendly and I presented in my project which I passed.”
+        </p>
+        <h4>Grace Kamau</h4>
+        <span>Student</span>
     </div>
 
-    <!-- CONTACT FORM -->
-    <form action="mailto:montiecarmon2002@gmail.com" method="POST" enctype="text/plain">
-        <label>Your Name</label>
-        <input type="text" name="name" required>
-
-        <label>Your Email</label>
-        <input type="email" name="email" required>
-
-        <label>Your Message</label>
-        <textarea name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-
+    <div class="testimonial">
+        <p>
+            “Strong frontend skills with great problem-solving ability.
+            Delivered the project on time and met all requirements.”
+        </p>
+        <h4>Angela Akinyi</h4>
+        <span>Student</span>
+    </div>
 </div>
 
 <!-- FOOTER -->
@@ -252,7 +220,7 @@
     © 2025 Montie Carmon — All Rights Reserved
 </div>
 
-<!-- MOBILE MENU SCRIPT -->
+<!-- MENU SCRIPT -->
 <script>
 document.querySelector(".menu-btn").addEventListener("click", () => {
     document.querySelector(".nav-links").classList.toggle("active");
